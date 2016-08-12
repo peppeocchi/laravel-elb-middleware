@@ -12,7 +12,7 @@ composer require peppeocchi/laravel-elb-middleware
 
 ## Usage
 The simplest way to use the middleware is to add it as a global middleware in `app/Http/Kernel.php`
-```
+```php
 ...
 class Kernel extends HttpKernel
 {
