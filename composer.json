@@ -1,0 +1,13 @@
+{
+    "name": "peppeocchi/laravel-elb-middleware",
+    "description": "Laravel middleware for Elastic Beanstalk",
+    "type": "middleware",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giuseppe Occhipinti",
+            "email": "peppeocchi@gmail.com"
+        }
+    ],
+    "require": {}
+}
