@@ -9,5 +9,6 @@
             "email": "peppeocchi@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
