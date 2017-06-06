@@ -1,6 +1,7 @@
 <?php namespace GO;
 
 use Closure;
+use Symfony\Component\HttpFoundation\Request;
 
 class ElasticBeanstalkHttps
 {
@@ -13,7 +14,11 @@ class ElasticBeanstalkHttps
      */
     public function handle($request, Closure $next)
     {
-        $request->setTrustedProxies(['127.0.0.1', $request->server->get('REMOTE_ADDR')]);
+        $request->setTrustedProxies(
+            ['127.0.0.1', $request->server->get('REMOTE_ADDR')],
+            Request::HEADER_X_FORWARDED_AWS_ELB
+        );
+
         return $next($request);
     }
 }

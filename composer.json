@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "symfony/http-foundation": "~3.2"
+    },
     "autoload": {
         "psr-0": {
             "GO": "src/"
